@@ -67,6 +67,7 @@ public class ChptOneNotes // Name of class must match the file name!
          System.out.println(stringstuff.indexOf("i")); // Finds the location of the FIRST character of i; if the letter isn't there, Java will return -1.
          System.out.println(stringstuff.indexOf("i", 2)); // Finds the location of the SECOND character of i
          
+         // --> the y.compareTo(x); subtracts amount of character ASCII values (not going to put that out)
          
          
          // Formatters
@@ -123,5 +124,7 @@ public class ChptOneNotes // Name of class must match the file name!
          double c2 = (f - 32) * ((double)x/y); // Variables can't promote! We can cast x to a double ONLY for the equation, temporarly.
          System.out.print("The celsius temp is (promotion): " + c1);
          System.out.print("The celsius temp is (var casting): " + c2);
+         
+         // 
     }
 }
