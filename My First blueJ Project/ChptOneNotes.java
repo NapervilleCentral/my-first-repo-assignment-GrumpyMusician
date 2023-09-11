@@ -72,12 +72,18 @@ public class ChptOneNotes // Name of class must match the file name!
          
          // Formatters
          DecimalFormat fmt = new DecimalFormat("0.###"); // Zeros PAD with extra zeros, hashtags are the places in which the numbers are rounded to
-         DecimalFormat fmt2 = new DecimalFormat("0.000");
          
-         NumberFormat money = NumberFormat.getCurrencyInstance();
-         NumberFormat percent = NumberFormat.getPercentInstance();
+         DecimalFormat fmt2 = new DecimalFormat("0.000"); // Here's another example
          
+         NumberFormat money = NumberFormat.getCurrencyInstance(); // Format as a currency
          
+         NumberFormat percent = NumberFormat.getPercentInstance(); // Format as a percentage
+         
+         System.out.printf("Format 1: " + fmt.format(230));
+         System.out.printf("\nName: %-15s ID: %7d ", "string1", 425); // Example of formatting in printing
+         System.out.printf("\nName: %-15s ID: %7f ", "string2", 12.42); // Example of formatting in printing
+         System.out.printf("\nName: %-15s ID: %7d ", "string1", 637); // Example of formatting in printing
+         System.out.printf("\nName: %-15s ID: %7f ", "string2", 14.42); // Example of formatting in printing
          
          // Scanner!
          Scanner keyboard = new Scanner(System.in); // Initalizes a scanner input by the name of keyboard

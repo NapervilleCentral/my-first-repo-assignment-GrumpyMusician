@@ -1,9 +1,10 @@
 
 /**
- * Write a description of class sololabs_coins here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * Andy Liang
+ * 09/07/23
+ * Sololabs Coins
+ * Calculates amount of money from coins
+ * int: dollarCoins, quarters, dimes, nickels, pennies; double: total
  */
 
 import java.util.Scanner;
@@ -13,7 +14,6 @@ public class sololabs_coins
 {
     public static void main(String[] args)
     {
-        // Makes a new scanner called coinInput
         Scanner coinInput = new Scanner(System.in);
         
         
@@ -35,10 +35,14 @@ public class sololabs_coins
         
         
         // Calculates the dollar amount from coins
-        double total = dollarCoins + (quarters * 0.25) + (dimes * 0.1) + (nickels * 0.25) + (pennies * 0.25);
+        double total = dollarCoins + (quarters * 0.25) + (dimes * 0.1) + (nickels * 0.05) + (pennies * 0.01);
         
-        // Outputs total, formatted.
+        // Outputs total, formatted as currency
         NumberFormat coinFmt = NumberFormat.getCurrencyInstance();
         System.out.println("Your total amount is: " + coinFmt.format(total));
     }
 }
+
+
+
+

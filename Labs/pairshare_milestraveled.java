@@ -48,3 +48,7 @@ public class pairshare_milestraveled
         System.out.println("Percentage of car's use for personal: " + fmt.format(personalMilesPer) + "%");
     }
 }
+
+/**
+ * Output One
+ */
